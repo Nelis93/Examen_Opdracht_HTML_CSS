@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!-- Vergeet je HTML niet in de juiste taal te zetten! -->
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Vergeet geen title mee te geven! -->
+	<title>Mijn examen</title>
+
+	<!-- Toevoegen van reset of normalize -->
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="main.css" />
+
+	<!-- Toevoegen van font in HTML -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<h1 class="subject">mijn oefening</h1>
+			<nav class="main-nav">
+				<a class="main-nav__link" href="#quote">Quote</a>
+				<a class="main-nav__link" href="#about">Over mij</a>
+				<a class="main-nav__link" href="#favorites">Favorieten</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="quote">
+			<div class="hero__container">
+				<h2 class="hero__title sr-only">Quote</h2>
+				<figure class="hero-quote">
+					<blockquote class="hero-quote__text">
+						Coderen leer je enkel door te doen.
+					</blockquote>
+					<figcaption class="hero-quote__author">
+						&mdash; Rune Devuyst
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="about__container">
+				<h2 class="section__title">Over mij</h2>
+				<article class="profile-card">
+					<img class="profile-card__img" src="img/rune-devuyst.jpeg" alt="Rune Devuyst profiel" />
+					<div class="profile-card__content">
+						<h3 class="profile-card__name">Rune Devuyst</h3>
+						<span class="profile-card__function">Coding designer</span>
+						<span class="profile-card__description">design, code & digital experience that help your web presence
+							blossom 🌱🌺</span>
+					</div>
+			</div>
+			</article>
+		</section>
+
+		<section class="favorites" id="favorites">
+			<div class="favorites__container">
+				<h2 class="section__title">Mijn favorieten</h2>
+				<div class="favorites__list">
+					<article class="favorite-item favorite-item--red-panda">
+						<h3 class="favorite-item__name">Red panda</h3>
+					</article>
+					<article class="favorite-item favorite-item--fox">
+						<h3 class="favorite-item__name">Vos</h3>
+					</article>
+					<article class="favorite-item favorite-item--horse">
+						<h3 class="favorite-item__name">Paard</h3>
+					</article>
+					<article class="favorite-item favorite-item--cheetah">
+						<h3 class="favorite-item__name">Cheetah</h3>
+					</article>
+					<article class="favorite-item favorite-item--flamingo">
+						<h3 class="favorite-item__name">Flamingo</h3>
+					</article>
+					<article class="favorite-item favorite-item--rainbow-bee-eater">
+						<h3 class="favorite-item__name">regenboogbijeneter</h3>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			Opdracht HTML & CSS | front-end developer 1 - avondonderwijs | jouw naam
+		</div>
+	</footer>
+</body>
+
+</html>

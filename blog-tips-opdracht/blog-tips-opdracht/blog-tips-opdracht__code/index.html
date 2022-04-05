@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<!-- Vergeet je HTML niet in de juiste taal te zetten! -->
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Vergeet geen title mee te geven! -->
+	<title>Mijn examen</title>
+
+	<!-- Toevoegen van reset of normalize -->
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="main.css" />
+
+	<!-- Toevoegen van font in HTML -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<span class="header__logo">Blog tips</span>
+			<nav class="main-nav">
+				<a class="main-nav__link" href="#">
+					<i class="main-nav__icon fab fa-facebook-square"><span class="sr-only">facebook</span></i>
+				</a>
+				<a class="main-nav__link" href="#">
+					<i class="main-nav__icon fab fa-instagram-square"><span class="sr-only">instagram</span></i>
+				</a>
+				<a class="main-nav__link" href="#">
+					<i class="main-nav__icon fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero__container">
+				<h1 class="hero__main-title"> Hoe de aandacht van je lezers behouden </h1>
+				<span class="hero__writer">door Rune Devuyst</span>
+			</div>
+		</section>
+
+		<section class="overview">
+			<div class="overview__container">
+				<h2 class="overview__title">De 3 basis-technieken</h2>
+				<div class="overview__list">
+					<article class="overview-item">
+						<img class="overview-item__img" src="img/illustration-structure.png" alt="" />
+						<a class="overview-item__link" href="#structure">
+							<h3 class="overview-item__title">structuur</h3>
+						</a>
+					</article>
+					<article class="overview-item">
+						<img class="overview-item__img" src="img/illustration-img.png" alt="" />
+						<h3 class="overview-item__title">afbeeldingen</h3>
+					</article>
+					<article class="overview-item">
+						<img class="overview-item__img" src="img/illustration-emoticons.png" alt="" />
+
+						<h3 class="overview-item__title">emoticons</h3>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="structure" id="structure">
+			<div class="structure__container">
+				<h2 class="structure__title">
+					<span class="structure__compact-title">structuur:</span> Een
+					duidelijk overzicht van je content maakt een groot verschil
+				</h2>
+				<p>
+					een goede structuur begint het de headings correct te gebruiken.
+					Hieronder de structuur van deze pagina.
+				</p>
+				<ol>
+					<li>
+						Hoe de aandacht van je lezers behouden
+						<ol>
+							<li>
+								de 3 basis-technieken
+								<ol>
+									<li>structuur</li>
+									<li>afbeeldingen</li>
+									<li>emoticons</li>
+								</ol>
+							</li>
+							<li>
+								structuur: een duidelijk overzicht van je content maakt een
+								groot verschil
+							</li>
+							<li>afbeeldingen: waarom goed beeldmateriaal bealngrijk is</li>
+							<li>emoticons: geef extra tone-of-voice via emoticons</li>
+							<li>Had je graag meer info gehad?</li>
+						</ol>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<section class="images">
+			<div class="images__container">
+				<h2 class="images__title">
+					<small>afbeeldingen:</small> Waarom goed beeldmateriaal belangrijk
+					is
+				</h2>
+
+				<article class="quote-item ">
+					<img class="quote-item__img" src="/img/quote-heart.jpeg"
+						alt="a heart created by negative space of different sheets of paper" />
+					<figure class="quote-item__content">
+						<blockquote class="quote-item__text">
+							Articles with images get 94% more total views.
+						</blockquote>
+						<figcaption class="quote-item__author">
+							&mdash; Jeff Bullas
+						</figcaption>
+					</figure>
+				</article>
+				<article class="quote-item quote-item--reversed">
+					<img class="quote-item__img" src="/img/quote-text-bubble.jpeg"
+						alt="a text bubble created by negative space of different sheets of paper, with 3 crumpled up papers as dots in the middle of it" />
+					<figure class="quote-item__content">
+						<blockquote class="quote-item__text">
+							Engagement rate on Facebook for photos averages 0.37% where text
+							only is 0.27%. This translates to a 37% higher level of
+							engagement for photos over text.
+						</blockquote>
+						<figcaption class="quote-item__author">
+							&mdash; Jeff Bullas
+						</figcaption>
+					</figure>
+				</article>
+			</div>
+		</section>
+
+		<section class="emoticons">
+			<div class="emoticons__container">
+				<h2 class="emoticons__title">
+					<small>emoticons:</small> Geef extra tone-of-voice via emoticons
+				</h2>
+				<div class="emoticons__wrapper">
+					<ul class="emoticons__list">
+						<li class="emoji-item">
+							<strong class="emoji-item__number">1</strong>
+							<span class="emoji-item__icon">😂</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">2</strong>
+							<span class="emoji-item__icon">❤️</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">3</strong>
+							<span class="emoji-item__icon">😍</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">4</strong>
+							<span class="emoji-item__icon">🤣</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">5</strong>
+							<span class="emoji-item__icon">😊</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">6</strong>
+							<span class="emoji-item__icon">🙏</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">7</strong>
+							<span class="emoji-item__icon">💕</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">8</strong>
+							<span class="emoji-item__icon">😭</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">9</strong>
+							<span class="emoji-item__icon">😘</span>
+						</li>
+						<li class="emoji-item">
+							<strong class="emoji-item__number">10</strong>
+							<span class="emoji-item__icon"> 👍</span>
+						</li>
+					</ul>
+					<aside class="emoticons__aside">
+						<p>
+							Hiernaast zie je de top 10 meest gebruikte emoticons van 2019.
+						</p>
+						<p>
+							Deze data komt van unicode.org hun onderzoek naar
+							<a href="https://home.unicode.org/emoji/emoji-frequency/">The most frequent emoji</a>.
+						</p>
+						<p>
+							Wil je zelf graag zoeken achter de ideale emoji? neem zeker eens
+							een kijkje op <a href="https://emojipedia.org/">emojipedia</a>!
+						</p>
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<h2 class="footer__title">Had je graag meer info gehad?</h2>
+			<form action="" class="contact-form">
+				<div class="contact-form__wrapper">
+					<label class="field-item">
+						<span class="field-item__label">je e-mailaddres</span>
+						<input class="field-item__input" type="email" />
+					</label>
+					<fieldset class="field-item">
+						<legend class="field-item__legend">
+							Met welk onderwerp kan ik je verder helpen?
+						</legend>
+						<label class="field-item__grouping">
+							<input class="field-item__checkbox" type="checkbox" />
+							<span class="field-item__label">structuur</span>
+						</label>
+						<label class="field-item__grouping">
+							<input class="field-item__checkbox" type="checkbox" />
+							<span class="field-item__label">afbeeldingen</span>
+						</label>
+						<label class="field-item__grouping">
+							<input class="field-item__checkbox" type="checkbox" />
+							<span class="field-item__label">emoticons</span>
+						</label>
+					</fieldset>
+				</div>
+				<div class="contact-form__wrapper">
+					<label class="field-item">
+						<span class="field-item__label">je bericht</span>
+						<textarea class="field-item__input" name="" id="" cols="30" rows="10"></textarea>
+					</label>
+					<button class="contact-form__submit">Ja, contacteer me!</button>
+				</div>
+			</form>
+		</div>
+	</footer>
+</body>
+
+</html>
