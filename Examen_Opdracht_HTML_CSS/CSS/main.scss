@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../Fonts/Poppins/);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(../Fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+.header {
+  background: no-repeat center/100% url("../Assets/Backgounds/BG.png");
+  &__disclaimer {
+    font-size: 2px;
+  }
+  &__title {
+    font-size: 5px;
+  }
+  &__subtitle {
+    font-size: 2px;
+  }
+  &__button {
+    font-size: 2px;
+    background-color: blue;
+    color: white;
+    :hover {
+      background-color: white;
+      color: blue;
+    }
+  }
+  &__footer {
+    background-color: darkblue;
+    margin: 2px 4px;
+    &--item {
+      :nth-child(1) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/realtime-icon.svg);
+        }
+      }
+      :nth-child(2) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/road\ map-icon.svg);
+        }
+      }
+      :nth-child(3) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/tips\ and\ trick-icon.svg);
+        }
+      }
+      :nth-child(4) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/onsite-icon.svg);
+        }
+      }
+    }
+  }
+}
