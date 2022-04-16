@@ -8,6 +8,7 @@
 }
 .header {
   background: no-repeat center/100% url("../Assets/Backgounds/BG.png");
+  color: white;
   &__disclaimer {
     font-size: 2px;
   }
@@ -55,5 +56,166 @@
         }
       }
     }
+  }
+}
+.masterclass {
+  display: flex;
+  flex-flow: column wrap;
+  &__part-one {
+    border-right: 1px black;
+  }
+  &__title {
+  }
+  &__subtitle {
+    font-family: ;
+  }
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    &--item {
+      :nth-child(1) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/user-friendly-icon.svg);
+        }
+      }
+      :nth-child(2) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/customized-icon.svg);
+        }
+      }
+      :nth-child(3) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/result-oriented-icon.svg);
+        }
+      }
+      :nth-child(4) {
+        ::before {
+          position: absolute;
+          content: url(../Assets/Icons/highly-depend-icon.svg);
+        }
+      }
+    }
+  }
+  &__call-to-action {
+  }
+  &--acco {
+    list-style-type: ???;
+  }
+  &--button {
+    font-size: 2px;
+    background-color: blue;
+    color: white;
+    :hover {
+      background-color: white;
+      color: blue;
+    }
+  }
+}
+.pamphlet {
+  text-align: left;
+  background-image: url("../Assets/Images/Index_js.png");
+  background-size: cover;
+  &__title {
+  }
+  &__quote {
+  }
+  &__content {
+  }
+}
+.target-audience {
+  text-align: right;
+  background-image: url("../Assets/Images/Dude_with_atom.png");
+  background-size: cover;
+  &__list {
+    list-style-type: ???;
+  }
+}
+.qualifications {
+  background-color: beige;
+  text-align: center;
+  &__list {
+    list-style-type: ???;
+    text-align: left;
+  }
+}
+.runthrough {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  &__list {
+    list-style-type: ???;
+    text-align: left;
+  }
+  &__footer {
+    background-color: darkblue;
+  }
+}
+.dashboard {
+  display: flex;
+  justify-content: center;
+  &__buttons {
+    display: flex;
+    flex-flow: row wrap;
+    &__button {
+      border: 1px blue;
+      border-radius: 5px;
+      margin: 2px 4px;
+    }
+  }
+  &__price {
+    border-radius: 10px;
+    background-color: yellow;
+    color: white;
+  }
+  &__call-to-action {
+    &--button {
+      font-size: 2px;
+      background-color: blue;
+      color: white;
+      :hover {
+        background-color: white;
+        color: blue;
+      }
+    }
+  }
+}
+.requirements {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+  &__card {
+    border-radius: 5px;
+    &__main {
+      background-color: darkblue;
+    }
+    &__auxiliary {
+      background-color: blue;
+    }
+  }
+}
+.exquisiste {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+  &__card {
+    border-radius: 5px;
+    &__title {
+      background-color: darkblue;
+      color: white;
+    }
+    p:first-of-type {
+      border-right: 1px blue;
+    }
+  }
+}
+
+.certification {
+  display: flex;
+  justify-content: center;
+  &__ {
   }
 }
