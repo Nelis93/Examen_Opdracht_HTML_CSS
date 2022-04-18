@@ -1,8 +1,288 @@
-@font-face {
-  font-family: "Poppins";
-  src: url(../Fonts/Poppins/);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5em;
 }
-@font-face {
-  font-family: "Manrope";
-  src: url(../Fonts/Manrope/Manrope-VariableFont_wght.ttf);
+
+.header {
+  background-image: url("../Assets/Backgounds/BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
+.header__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10em;
+}
+.header__main--disclaimer {
+  font-size: 1em;
+  margin: 2em 0;
+}
+.header__main--title {
+  font-size: 4em;
+  font-weight: bold;
+  max-width: 50%;
+  margin-bottom: 0.5em;
+}
+.header__main--subtitle {
+  font-size: 1em;
+  margin-bottom: 3em;
+}
+.header__main__buttons--button {
+  font-size: 1em;
+  padding: 1em 2em;
+  border-radius: 5px;
+  background-color: #002c89;
+  text-decoration: none;
+  color: white;
+}
+.header__main__buttons--button:hover {
+  background-color: white;
+  color: #002c89;
+}
+.header__footer {
+  background-color: #00094c;
+}
+.header__footer__items {
+  margin-left: 3em;
+  padding: 0 4em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /*       &__item {
+    max-width: 2em;
+  } */
+}
+.header__footer__items :nth-child(1) {
+  list-style-image: url(../Assets/Icons/realtime-icon.svg);
+  padding: 2em 0;
+}
+.header__footer__items :nth-child(2) {
+  list-style-image: url(../Assets/Icons/road\ map-icon.svg);
+  padding: 2em 0;
+}
+.header__footer__items :nth-child(3) {
+  list-style-image: url(../Assets/Icons/tips\ and\ trick-icon.svg);
+  padding: 2em 0;
+}
+.header__footer__items :nth-child(4) {
+  list-style-image: url(../Assets/Icons/onsite-icon.svg);
+  padding: 2em 0;
+}
+
+.masterclass {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10em;
+  margin-bottom: 1em;
+  height: 60vh;
+}
+.masterclass__part-one {
+  border-right: 1px solid black;
+  max-width: 50%;
+}
+.masterclass__part-one__title {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.masterclass__part-one__subtitle {
+  line-height: 2em;
+}
+.masterclass__part-one__list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2em 4em;
+}
+.masterclass__part-one__list--item {
+  padding: 1em;
+  margin-right: 5em;
+}
+.masterclass__part-one__list :nth-child(1) {
+  list-style-image: url(../Assets/Icons/user-friendly-icon.svg);
+}
+.masterclass__part-one__list :nth-child(2) {
+  list-style-image: url(../Assets/Icons/customized-icon.svg);
+}
+.masterclass__part-one__list :nth-child(3) {
+  list-style-image: url(../Assets/Icons/result-oriented-icon.svg);
+}
+.masterclass__part-one__list :nth-child(4) {
+  list-style-image: url(../Assets/Icons/highly-depend-icon.svg);
+}
+.masterclass__part-two {
+  max-width: 30%;
+}
+.masterclass__part-two__call-to-action {
+  line-height: 1.5em;
+  padding: 2em 0;
+}
+.masterclass__part-two--acco {
+  list-style-type: square;
+  margin-bottom: 4em;
+}
+.masterclass__part-two--button {
+  font-size: 1em;
+  padding: 1em 2em;
+  background-color: #002c89;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+.masterclass__part-two--button:hover {
+  background-color: white;
+  color: #002c89;
+}
+
+.pamphlet {
+  background-image: url("../Assets/Images/Index_js.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #e5f9fe;
+}
+.pamphlet__text {
+  max-width: 40%;
+  padding: 4em 10em;
+}
+.pamphlet__text__title {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+.pamphlet__text__quote {
+  margin-top: 2em;
+}
+.pamphlet__text__content {
+  margin: 2em 0;
+  line-height: 1.5em;
+}
+
+.target-audience {
+  background-image: url("../Assets/Images/Dude_with_atom.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.target-audience__text {
+  max-width: 50%;
+  margin-left: 50%;
+  padding: 10em 5em 10em 0;
+}
+.target-audience__text__title {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+.target-audience__text__list {
+  list-style-type: square;
+  padding: 2em 1em;
+}
+.target-audience__text__list--item {
+  padding: 1em;
+}
+
+.qualifications {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 5em 20em;
+}
+.qualifications__title {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+.qualifications__description {
+  margin-top: 2em;
+  line-height: 1.5em;
+  padding: 0 2em;
+}
+.qualifications__list {
+  list-style-type: square;
+  text-align: left;
+  padding-top: 2em;
+}
+.qualifications__list--item {
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+.runthrough {
+  display: flex;
+  justify-content: center;
+  background-color: #002c89;
+  color: white;
+}
+.runthrough__list {
+  list-style-type: none;
+  text-align: left;
+}
+.runthrough__footer {
+  background-color: darkblue;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+}
+.dashboard__buttons {
+  display: flex;
+  flex-flow: row wrap;
+}
+.dashboard__buttons__button {
+  border: 1px blue;
+  border-radius: 5px;
+  margin: 2px 4px;
+}
+.dashboard__price {
+  border-radius: 10px;
+  background-color: yellow;
+  color: white;
+}
+.dashboard__call-to-action--button {
+  font-size: 2px;
+  background-color: blue;
+  color: white;
+}
+.dashboard__call-to-action--button :hover {
+  background-color: white;
+  color: blue;
+}
+
+.requirements {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+.requirements__card {
+  border-radius: 5px;
+}
+.requirements__card__main {
+  background-color: darkblue;
+}
+.requirements__card__auxiliary {
+  background-color: blue;
+}
+
+.exquisiste {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+.exquisiste__card {
+  border-radius: 5px;
+}
+.exquisiste__card__title {
+  background-color: darkblue;
+  color: white;
+}
+.exquisiste__card p:first-of-type {
+  border-right: 1px blue;
+}
+
+.certification {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
