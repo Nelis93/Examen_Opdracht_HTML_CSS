@@ -65,6 +65,7 @@ $grey: rgba(249, 249, 249);
       } */
       :nth-child(1) {
         list-style-image: url(../Assets/Icons/realtime-icon.svg);
+
         padding: 2em 0;
       }
       :nth-child(2) {
@@ -217,43 +218,99 @@ $grey: rgba(249, 249, 249);
   }
 }
 .runthrough {
-  display: flex;
-  justify-content: center;
-  background-color: $mid;
   color: white;
-  &__list {
-    list-style-type: none;
-    text-align: left;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    background-color: $mid;
+    align-items: center;
+    padding: 5em 10em;
+
+    &__title {
+      font-size: 2em;
+      text-align: center;
+    }
+    &__description {
+      text-align: center;
+      padding: 5em;
+    }
+    &__list {
+      list-style-type: square;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      max-height: 110vh;
+
+      &--item {
+        margin-right: 5em;
+        padding: 1em;
+        max-width: 50%;
+      }
+    }
   }
   &__footer {
-    background-color: darkblue;
+    background-color: $dark;
+    padding: 2em 10em;
+    &--section {
+      padding: 1em;
+      text-align: center;
+    }
   }
 }
 .dashboard {
   display: flex;
-  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 2em 10em;
+
+  &__title {
+    font-size: 2em;
+    padding-top: 2em;
+  }
   &__buttons {
     display: flex;
-    flex-flow: row wrap;
-    &__button {
-      border: 1px blue;
+    flex-flow: column wrap;
+    align-items: space-around;
+    padding: 2em;
+    max-height: 40vh;
+    max-width: 100%;
+    &--button {
+      padding: 1.5em;
+      border: 2px solid $dark;
       border-radius: 5px;
-      margin: 2px 4px;
+      margin: 0.5em 1em;
+      text-align: center;
+      h2 {
+        font-size: 1.5em;
+        color: $dark;
+      }
+      p {
+        padding: 1em;
+      }
     }
   }
   &__price {
-    border-radius: 10px;
-    background-color: yellow;
+    border-radius: 50px;
+    background-color: $yellow;
     color: white;
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
   }
   &__call-to-action {
+    font-size: 1.5em;
+    padding: 1em;
     &--button {
-      font-size: 2px;
-      background-color: blue;
+      font-size: 1.5em;
+      background-color: $dark;
       color: white;
-      :hover {
+      padding: 1em 2.5em;
+      margin: 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      &:hover {
         background-color: white;
-        color: blue;
+        color: $dark;
+        border: 2px solid $dark;
       }
     }
   }
@@ -262,13 +319,19 @@ $grey: rgba(249, 249, 249);
   display: flex;
   justify-content: center;
   background-color: lightblue;
+  &__title {
+  }
   &__card {
     border-radius: 5px;
     &__main {
       background-color: darkblue;
+      &--content {
+      }
     }
     &__auxiliary {
       background-color: blue;
+      &--content {
+      }
     }
   }
 }
@@ -276,11 +339,16 @@ $grey: rgba(249, 249, 249);
   display: flex;
   justify-content: center;
   background-color: lightblue;
+  &__title {
+  }
+
   &__card {
     border-radius: 5px;
-    &__title {
+    &--title {
       background-color: darkblue;
       color: white;
+    }
+    &--content {
     }
     p:first-of-type {
       border-right: 1px blue;
