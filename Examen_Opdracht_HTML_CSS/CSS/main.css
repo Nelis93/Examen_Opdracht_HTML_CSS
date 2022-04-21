@@ -134,6 +134,7 @@
 }
 .masterclass__part-two--button:hover {
   background-color: white;
+  border: 2px solid #002c89;
   color: #002c89;
 }
 
@@ -291,7 +292,7 @@
 }
 .dashboard__call-to-action--button {
   font-size: 1.5em;
-  background-color: #00094c;
+  background-color: #002c89;
   color: white;
   padding: 1em 2.5em;
   margin: 1em;
@@ -301,43 +302,86 @@
 .dashboard__call-to-action--button:hover {
   background-color: white;
   color: #00094c;
-  border: 2px solid #00094c;
+  border: 2px solid #002c89;
 }
 
 .requirements {
   display: flex;
-  justify-content: center;
-  background-color: lightblue;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #e5f9fe;
+  padding: 3em 10em;
+}
+.requirements__title {
+  font-size: 2em;
 }
 .requirements__card {
-  border-radius: 5px;
+  margin-top: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .requirements__card__main {
-  background-color: darkblue;
+  background-color: #002c89;
+  color: white;
+  max-width: 30%;
+}
+.requirements__card__main--content {
+  padding: 2em;
 }
 .requirements__card__auxiliary {
-  background-color: blue;
+  max-width: 40%;
+  background-color: #0062ab;
+}
+.requirements__card__auxiliary--content {
+  color: white;
+  padding: 2em;
+}
+.requirements__card__auxiliary--content:nth-child(1) {
+  padding-bottom: 0;
 }
 
-.exquisiste {
+.exquisite {
   display: flex;
-  justify-content: center;
-  background-color: lightblue;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #e5f9fe;
+  padding: 3em 10em;
 }
-.exquisiste__card {
-  border-radius: 5px;
+.exquisite__title {
+  font-size: 2em;
 }
-.exquisiste__card__title {
-  background-color: darkblue;
+.exquisite__card {
+  border: 2px solid #002c89;
+  margin-top: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  max-height: 40vh;
+}
+.exquisite__card--title {
+  background-color: #002c89;
   color: white;
+  padding: 1em 2em;
+  max-width: 50%;
+  font-size: 2em;
+  line-height: 1.5em;
 }
-.exquisiste__card p:first-of-type {
-  border-right: 1px blue;
+.exquisite__card--content {
+  padding: 2em;
+  max-width: 50%;
+  line-height: 1.5em;
+}
+.exquisite__card p:first-of-type {
+  border-right: 1px solid #002c89;
 }
 
 .certification {
   display: flex;
-  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

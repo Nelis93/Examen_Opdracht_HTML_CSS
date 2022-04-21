@@ -144,6 +144,7 @@ $grey: rgba(249, 249, 249);
       text-decoration: none;
       &:hover {
         background-color: white;
+        border: 2px solid $mid;
         color: $mid;
       }
     }
@@ -301,7 +302,7 @@ $grey: rgba(249, 249, 249);
     padding: 1em;
     &--button {
       font-size: 1.5em;
-      background-color: $dark;
+      background-color: $mid;
       color: white;
       padding: 1em 2.5em;
       margin: 1em;
@@ -310,53 +311,127 @@ $grey: rgba(249, 249, 249);
       &:hover {
         background-color: white;
         color: $dark;
-        border: 2px solid $dark;
+        border: 2px solid $mid;
       }
     }
   }
 }
 .requirements {
   display: flex;
-  justify-content: center;
-  background-color: lightblue;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: $extra-light;
+  padding: 3em 10em;
   &__title {
+    font-size: 2em;
   }
   &__card {
-    border-radius: 5px;
+    margin-top: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     &__main {
-      background-color: darkblue;
+      background-color: $mid;
+      color: white;
+      max-width: 30%;
       &--content {
+        padding: 2em;
       }
     }
     &__auxiliary {
-      background-color: blue;
+      max-width: 40%;
+      background-color: $light;
+
       &--content {
+        color: white;
+        padding: 2em;
+        &:nth-child(1) {
+          padding-bottom: 0;
+        }
       }
     }
   }
 }
-.exquisiste {
+.exquisite {
   display: flex;
-  justify-content: center;
-  background-color: lightblue;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: $extra-light;
+  padding: 3em 10em;
   &__title {
+    font-size: 2em;
   }
 
   &__card {
-    border-radius: 5px;
+    border: 2px solid $mid;
+    margin-top: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    max-height: 40vh;
     &--title {
-      background-color: darkblue;
+      background-color: $mid;
       color: white;
+      padding: 1em 2em;
+      max-width: 50%;
+      font-size: 2em;
+      line-height: 1.5em;
     }
     &--content {
+      padding: 2em;
+      max-width: 50%;
+      line-height: 1.5em;
     }
     p:first-of-type {
-      border-right: 1px blue;
+      border-right: 1px solid $mid;
     }
   }
 }
 
 .certification {
   display: flex;
-  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  &__title {
+  }
+  &__description {
+  }
+  &__choices {
+    &--title {
+    }
+    &--subtitle {
+    }
+    &__container {
+      &--choice {
+      }
+      &--divider {
+      }
+    }
+  }
+  &__call-to-action {
+    &--button {
+    }
+  }
+}
+.footer {
+  &__title {
+  }
+  &__content {
+  }
+  &__signage {
+    &__email {
+      &--us {
+      }
+      &--address {
+      }
+      &__phone {
+        &--us {
+        }
+        &--number {
+        }
+      }
+    }
+  }
 }
