@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 html {
   font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
 }
 $extra-light: rgba(229, 249, 254);
 $light: rgba(0, 98, 171);
@@ -15,25 +16,30 @@ $grey: rgba(249, 249, 249);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  max-height: 100vh;
   &__main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    padding: 10rem;
+    background-image: url("../Assets/Images/Hero-main-img.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 5rem 10rem;
+    height: 60vh;
     &--disclaimer {
       font-size: 1em;
       margin: 2em 0;
     }
     &--title {
-      font-size: 4em;
+      font-size: 3em;
       font-weight: bold;
       max-width: 50%;
       margin-bottom: 0.5em;
     }
     &--subtitle {
       font-size: 1em;
-      margin-bottom: 3em;
+      margin-bottom: 4em;
     }
     &__buttons {
       &--button {
@@ -94,16 +100,17 @@ $grey: rgba(249, 249, 249);
   flex-flow: column wrap;
   justify-content: flex-start;
   padding: 10em;
-  margin-bottom: 1em;
   height: 60vh;
   &__part-one {
     border-right: 1px solid lightgray;
-    width: 50%;
+    width: 60%;
 
     &__title {
       font-size: 2.5em;
+      font-weight: 600;
       line-height: 1.5em;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
+      color: $dark;
     }
     &__subtitle {
       line-height: 2em;
@@ -113,13 +120,13 @@ $grey: rgba(249, 249, 249);
       flex-flow: column wrap;
       align-items: flex-start;
       max-width: 30rem;
-      max-height: 20rem;
-      padding: 2em 0;
+      max-height: 10rem;
+      padding-top: 2em;
       &--item {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1em 0;
+        padding-top: 1em;
         margin-right: 5em;
       }
       :nth-child(1) {
@@ -149,17 +156,19 @@ $grey: rgba(249, 249, 249);
     }
   }
   &__part-two {
-    max-width: 30%;
-
+    max-width: 40%;
+    padding-left: 3em;
     &__call-to-action {
       line-height: 1.5em;
       padding: 2em 0;
+      font-weight: 600;
     }
     &--acco {
       margin-bottom: 4em;
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      font-weight: 600;
       &::before {
         content: "";
         padding: 1em;
@@ -187,7 +196,7 @@ $grey: rgba(249, 249, 249);
 }
 .pamphlet {
   background-image: url("../Assets/Images/Index_js.png");
-  background-size: 30%;
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: right;
   background-color: $extra-light;
@@ -198,9 +207,15 @@ $grey: rgba(249, 249, 249);
     &__title {
       font-size: 2em;
       line-height: 1.5em;
+      font-weight: 600;
+      color: $dark;
     }
     &__quote {
       margin-top: 2em;
+      font-weight: 600;
+      &--italic {
+        font-style: italic;
+      }
     }
     &__content {
       margin: 2em 0;
@@ -210,7 +225,7 @@ $grey: rgba(249, 249, 249);
 }
 .target-audience {
   background-image: url("../Assets/Images/Dude_with_atom.png");
-  background-size: 30%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: left;
   &__text {
@@ -219,15 +234,18 @@ $grey: rgba(249, 249, 249);
     padding: 10em 5em 10em 0;
     &__title {
       font-size: 2em;
+      font-weight: 600;
+      color: $dark;
       line-height: 1.5em;
     }
     &__list {
-      padding: 2em 1em;
+      padding: 2em 0;
       &--item {
-        padding: 1em;
+        padding: 1em 0;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
+        line-height: 1.5rem;
         &::before {
           content: "";
           padding: 1em;
@@ -243,9 +261,11 @@ $grey: rgba(249, 249, 249);
 .qualifications {
   background-color: $grey;
   text-align: center;
-  padding: 5em 20em;
+  padding: 5em 10em;
   &__title {
     font-size: 2em;
+    font-weight: 600;
+    color: $dark;
     line-height: 1.5em;
   }
   &__description {
@@ -259,7 +279,9 @@ $grey: rgba(249, 249, 249);
     &--item {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
+      line-height: 1.5rem;
+      padding: 1rem 0;
       &::before {
         content: "";
         padding: 1em;
@@ -280,29 +302,35 @@ $grey: rgba(249, 249, 249);
     flex-direction: column;
     background-color: $mid;
     align-items: center;
-    padding: 5em 10em;
+    padding: 5em 10rem;
 
     &__title {
       font-size: 2em;
       text-align: center;
+      padding: 1em 0;
+      line-height: 1.5em;
+      font-weight: 600;
     }
     &__description {
       text-align: center;
-      padding: 5em;
+      padding-bottom: 5em;
+      line-height: 1.5rem;
+      width: 80%;
     }
     &__list {
       display: flex;
       flex-flow: column wrap;
-      align-items: flex-start;
-      max-height: 110vh;
+      width: 100%;
+      max-height: 60rem;
 
       &--item {
         margin-right: 5em;
         padding: 1em;
-        max-width: 50%;
+        max-width: 40%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
+        line-height: 1.5rem;
         &::before {
           content: "";
           padding: 1em;
@@ -321,6 +349,7 @@ $grey: rgba(249, 249, 249);
     &--section {
       padding: 1em;
       text-align: center;
+      line-height: 1.5rem;
     }
   }
 }
@@ -328,29 +357,35 @@ $grey: rgba(249, 249, 249);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding: 2em 10em;
+  padding: 5em 5rem;
 
   &__title {
     font-size: 2em;
     padding-top: 2em;
+    font-weight: 600;
+    color: $dark;
   }
   &__buttons {
     display: flex;
     flex-flow: column wrap;
-    align-items: space-evenly;
-    padding: 2rem 0;
-    max-height: 40vh;
+    justify-content: center;
+    align-content: center;
+    height: 50vh;
     width: 100%;
+    padding: 2rem 0;
+
     &--button {
-      border: 2px solid $dark;
+      border: 2px solid $mid;
       border-radius: 10px;
-      margin: 0.5em 1em;
+      margin: 1em 1.5rem 0 0;
       text-align: center;
-      padding: 3rem;
+      padding: 2rem;
       width: 20vw;
+      max-height: 10vh;
       h2 {
         font-size: 1.5em;
-        color: $dark;
+        color: $mid;
+        padding-bottom: 1rem;
       }
       p {
       }
@@ -366,13 +401,15 @@ $grey: rgba(249, 249, 249);
   &__call-to-action {
     font-size: 1.5em;
     padding: 1em;
+    width: 40vw;
+    text-align: center;
     &--button {
       font-size: 1.5em;
       background-color: $mid;
       color: white;
       padding: 1em 2.5em;
       margin: 1em;
-      border-radius: 5px;
+      border-radius: 10px;
       text-decoration: none;
       border: 2px solid white;
       &:hover {
@@ -391,7 +428,10 @@ $grey: rgba(249, 249, 249);
   padding: 3em 10em;
 
   &__title {
+    padding: 1.5rem 0;
     font-size: 2em;
+    font-weight: 600;
+    color: $dark;
   }
   &__card {
     margin-top: 2em;
@@ -405,6 +445,7 @@ $grey: rgba(249, 249, 249);
       color: white;
       max-width: 40%;
       &--content {
+        line-height: 2rem;
         padding: 2em;
       }
     }
@@ -427,9 +468,11 @@ $grey: rgba(249, 249, 249);
   flex-flow: column wrap;
   align-items: center;
   background-color: $extra-light;
-  padding: 3em 10em;
+  padding: 5rem 10rem;
   &__title {
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark;
   }
 
   &__card {
@@ -447,9 +490,9 @@ $grey: rgba(249, 249, 249);
         display: flex;
         background-color: $mid;
         color: white;
-        padding: 3rem 5rem;
+        padding: 2rem 5rem;
         /*         padding: 1em 2em; */
-        font-size: 2em;
+        font-size: 1.5rem;
         line-height: 1.5em;
         height: 3em;
         align-items: center;
@@ -457,7 +500,7 @@ $grey: rgba(249, 249, 249);
       &--content {
         padding: 3rem 5rem;
         /*         padding: 3em; */
-        line-height: 1.5em;
+        line-height: 1.5rem;
       }
     }
     &__left {
@@ -466,9 +509,9 @@ $grey: rgba(249, 249, 249);
       &--title {
         background-color: $mid;
         color: white;
-        padding: 3rem 5rem;
+        padding: 2rem 5rem;
         /*         padding: 5rem; */
-        font-size: 2em;
+        font-size: 1.5rem;
         line-height: 1.5em;
         height: 3em;
         align-self: center;
@@ -489,55 +532,65 @@ $grey: rgba(249, 249, 249);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding: 5em 10em;
+  padding: 5rem 10rem;
   line-height: 1.5em;
   text-align: center;
   &__title {
-    font-size: 2em;
-    padding: 1em;
+    font-size: 2rem;
+    padding: 1rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: $dark;
   }
   &__description {
     padding: 1em;
-    max-width: 60%;
   }
   &__choices {
     &--title {
       margin-top: 2em;
-      font-size: 2em;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $dark;
     }
     &--subtitle {
-      padding: 2em;
+      padding: 2rem 10rem;
     }
     &__container {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: center;
       padding: 2em 0;
       &--choice {
-        max-width: 30%;
+        max-width: 35%;
         padding: 2em;
         background-color: $mid;
         color: white;
-        border-radius: 5px;
+        border-radius: 10px;
       }
       &--divider {
-        padding: 2em;
-        font-size: 2em;
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $dark;
+        align-self: center;
       }
     }
   }
   &__call-to-action {
     font-size: 1.5em;
     padding: 1em;
+    font-weight: 500;
+    line-height: 2rem;
+    color: $dark;
     &--button {
       margin-top: 1em;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       background-color: $mid;
       color: white;
       padding: 1em 2.5em;
       margin: 1em;
       border: 2px solid white;
-      border-radius: 5px;
+      border-radius: 10px;
       text-decoration: none;
       &:hover {
         background-color: white;
@@ -552,26 +605,27 @@ $grey: rgba(249, 249, 249);
   background-image: url("../Assets/Images/Dude_with_headset.png");
   background-color: $dark;
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: contain;
   background-position: right;
-  padding: 5em 10em;
-  line-height: 1.5em;
+  padding: 5rem 10rem 0 10rem;
+  line-height: 1.5rem;
   color: white;
   &__title {
     font-size: 2em;
   }
   &__content {
     padding: 2em 0;
-    max-width: 30%;
+    max-width: 50%;
   }
   &__signage {
+    padding-bottom: 5rem;
     &__email {
-      display: flex;
-      flex-flow: column wrap;
       max-height: 10vh;
-      max-width: 15%;
-      padding-top: 1em;
 
+      padding: 2rem 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
       &::before {
         content: url("../Assets/Icons/ic_round-email.svg");
         display: flex;
@@ -579,26 +633,24 @@ $grey: rgba(249, 249, 249);
         justify-content: center;
         border-radius: 5px;
         background-color: white;
-        padding: 10%;
-        width: 20%;
+        width: 10%;
       }
-      &--us {
-        padding-top: 1em;
-        padding-left: 1em;
-      }
-      &--address {
-        padding-bottom: 1em;
-        padding-left: 1em;
+      &__container {
+        &--us {
+          padding-top: 1em;
+          padding-left: 1em;
+        }
+        &--address {
+          padding-bottom: 1em;
+          padding-left: 1em;
+        }
       }
     }
     &__phone {
-      display: flex;
-      flex-flow: column wrap;
-
       max-height: 10vh;
-      max-width: 15%;
-      padding-top: 1em;
-
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
       &::before {
         content: url("../Assets/Icons/carbon_phone-voice-filled.svg");
         display: flex;
@@ -606,16 +658,680 @@ $grey: rgba(249, 249, 249);
         justify-content: center;
         border-radius: 5px;
         background-color: white;
-        padding: 10%;
-        width: 20%;
+        width: 10%;
       }
-      &--us {
-        padding-top: 1em;
-        padding-left: 1em;
+      &__container {
+        &--us {
+          padding-top: 1em;
+          padding-left: 1em;
+        }
+        &--number {
+          padding-bottom: 1em;
+          padding-left: 1em;
+        }
       }
-      &--number {
-        padding-bottom: 1em;
-        padding-left: 1em;
+    }
+  }
+}
+@media all and (max-width: 780px) {
+  .header {
+    background-image: url("../Assets/Backgounds/BG\ -mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    max-height: 100vh;
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-image: url("../Assets/Images/Hero-main-img.svg");
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 5rem 2rem;
+      height: 60vh;
+      &--disclaimer {
+        font-size: 1em;
+        margin: 2em 0;
+      }
+      &--title {
+        font-size: 3em;
+        font-weight: bold;
+        max-width: 50%;
+        margin-bottom: 0.5em;
+      }
+      &--subtitle {
+        font-size: 1em;
+        margin-bottom: 4em;
+      }
+      &__buttons {
+        &--button {
+          font-size: 1em;
+          padding: 1em 2em;
+          border-radius: 5px;
+          background-color: $mid;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            background-color: white;
+            color: $mid;
+          }
+        }
+      }
+    }
+    &__footer {
+      background-color: $dark;
+      padding: 3rem 10rem;
+      &__items {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &--item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        :nth-child(1) {
+          &::before {
+            content: url("../Assets/Icons/realtime-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+        :nth-child(2) {
+          &::before {
+            content: url("../Assets/Icons/road\ map-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+        :nth-child(3) {
+          &::before {
+            content: url("../Assets/Icons/tips\ and\ trick-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+        :nth-child(4) {
+          &::before {
+            content: url("../Assets/Icons/onsite-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .masterclass {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 10em;
+    height: 60vh;
+    &__part-one {
+      border-right: 1px solid lightgray;
+      width: 60%;
+
+      &__title {
+        font-size: 2.5em;
+        font-weight: 600;
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
+        color: $dark;
+      }
+      &__subtitle {
+        line-height: 2em;
+      }
+      &__list {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        max-width: 30rem;
+        max-height: 10rem;
+        padding-top: 2em;
+        &--item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 1em;
+          margin-right: 5em;
+        }
+        :nth-child(1) {
+          &::before {
+            content: url("../Assets/Icons/user-friendly-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+        :nth-child(2) {
+          &::before {
+            content: url("../Assets/Icons/result-oriented-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+        :nth-child(3) {
+          &::before {
+            content: url("../Assets/Icons/customized-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+        :nth-child(4) {
+          &::before {
+            content: url("../Assets/Icons/highly-depend-icon.svg");
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+    &__part-two {
+      max-width: 40%;
+      padding-left: 3em;
+      &__call-to-action {
+        line-height: 1.5em;
+        padding: 2em 0;
+        font-weight: 600;
+      }
+      &--acco {
+        margin-bottom: 4em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 600;
+        &::before {
+          content: "";
+          padding: 1em;
+          margin-right: 1rem;
+          background-image: url("../Assets/Images/checkmark.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      &--button {
+        font-size: 1em;
+        padding: 1em 2em;
+        background-color: $mid;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        &:hover {
+          background-color: white;
+          border: 2px solid $mid;
+          color: $mid;
+        }
+      }
+    }
+  }
+  .pamphlet {
+    background-image: url("../Assets/Images/Index_js.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: $extra-light;
+
+    &__text {
+      max-width: 40%;
+      padding: 4em 10em;
+      &__title {
+        font-size: 2em;
+        line-height: 1.5em;
+        font-weight: 600;
+        color: $dark;
+      }
+      &__quote {
+        margin-top: 2em;
+        font-weight: 600;
+        &--italic {
+          font-style: italic;
+        }
+      }
+      &__content {
+        margin: 2em 0;
+        line-height: 1.5em;
+      }
+    }
+  }
+  .target-audience {
+    background-image: url("../Assets/Images/Dude_with_atom.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left;
+    &__text {
+      max-width: 50%;
+      margin-left: 50%;
+      padding: 10em 5em 10em 0;
+      &__title {
+        font-size: 2em;
+        font-weight: 600;
+        color: $dark;
+        line-height: 1.5em;
+      }
+      &__list {
+        padding: 2em 0;
+        &--item {
+          padding: 1em 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          line-height: 1.5rem;
+          &::before {
+            content: "";
+            padding: 1em;
+            margin-right: 1rem;
+            background-image: url("../Assets/Images/checkmark.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+  .qualifications {
+    background-color: $grey;
+    text-align: center;
+    padding: 5em 10em;
+    &__title {
+      font-size: 2em;
+      font-weight: 600;
+      color: $dark;
+      line-height: 1.5em;
+    }
+    &__description {
+      margin-top: 2em;
+      line-height: 1.5em;
+      padding: 0 2em;
+    }
+    &__list {
+      text-align: left;
+      padding-top: 2em;
+      &--item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        line-height: 1.5rem;
+        padding: 1rem 0;
+        &::before {
+          content: "";
+          padding: 1em;
+          margin-right: 1rem;
+          background-image: url("../Assets/Images/checkmark.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          line-height: 1.5em;
+          padding: 1em;
+        }
+      }
+    }
+  }
+  .runthrough {
+    color: white;
+    &__main {
+      display: flex;
+      flex-direction: column;
+      background-color: $mid;
+      align-items: center;
+      padding: 5em 10rem;
+
+      &__title {
+        font-size: 2em;
+        text-align: center;
+        padding: 1em 0;
+        line-height: 1.5em;
+        font-weight: 600;
+      }
+      &__description {
+        text-align: center;
+        padding-bottom: 5em;
+        line-height: 1.5rem;
+        width: 80%;
+      }
+      &__list {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        max-height: 145vh;
+
+        &--item {
+          margin-right: 5em;
+          padding: 1em;
+          max-width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          line-height: 1.5rem;
+          &::before {
+            content: "";
+            padding: 1em;
+            margin-right: 1rem;
+            background-image: url("../Assets/Images/checkmark.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      background-color: $dark;
+      padding: 2em 10em;
+      &--section {
+        padding: 1em;
+        text-align: center;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  .dashboard {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 5em 5rem;
+
+    &__title {
+      font-size: 2em;
+      padding-top: 2em;
+      font-weight: 600;
+      color: $dark;
+    }
+    &__buttons {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center;
+      height: 50vh;
+      width: 100%;
+      padding: 2rem 0;
+
+      &--button {
+        border: 2px solid $mid;
+        border-radius: 10px;
+        margin: 1em 1.5rem 0 0;
+        text-align: center;
+        padding: 2rem;
+        width: 20vw;
+        max-height: 10vh;
+        h2 {
+          font-size: 1.5em;
+          color: $mid;
+          padding-bottom: 1rem;
+        }
+        p {
+        }
+      }
+    }
+    &__price {
+      border-radius: 50px;
+      background-color: $yellow;
+      color: white;
+      padding: 0.5em 1.5em;
+      font-size: 1.5em;
+    }
+    &__call-to-action {
+      font-size: 1.5em;
+      padding: 1em;
+      width: 40vw;
+      text-align: center;
+      &--button {
+        font-size: 1.5em;
+        background-color: $mid;
+        color: white;
+        padding: 1em 2.5em;
+        margin: 1em;
+        text-decoration: none;
+        border-radius: 10px;
+        &:hover {
+          background-color: white;
+          color: $dark;
+          border: 2px solid $mid;
+        }
+      }
+    }
+  }
+  .requirements {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: $extra-light;
+    padding: 3em 10em;
+
+    &__title {
+      padding: 1.5rem 0;
+      font-size: 2em;
+      font-weight: 600;
+      color: $dark;
+    }
+    &__card {
+      margin-top: 2em;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      &__main {
+        background-color: $mid;
+        border-radius: 10px 0px 0px 10px;
+        color: white;
+        max-width: 40%;
+        &--content {
+          line-height: 2rem;
+          padding: 2em;
+        }
+      }
+      &__auxiliary {
+        max-width: 60%;
+        background-color: $light;
+        border-radius: 0px 10px 10px 0px;
+        &--content {
+          color: white;
+          padding: 2em;
+          &:nth-child(1) {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .exquisite {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: $extra-light;
+    padding: 5rem 10rem;
+    &__title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $dark;
+    }
+
+    &__card {
+      border: 2px solid $mid;
+      margin-top: 2em;
+      border-radius: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+
+      &__right {
+        width: 50%;
+
+        &--title {
+          display: flex;
+          background-color: $mid;
+          color: white;
+          padding: 2rem 5rem;
+          /*         padding: 1em 2em; */
+          font-size: 1.5rem;
+          line-height: 1.5em;
+          height: 3em;
+          align-items: center;
+        }
+        &--content {
+          padding: 3rem 5rem;
+          /*         padding: 3em; */
+          line-height: 1.5rem;
+        }
+      }
+      &__left {
+        width: 50%;
+
+        &--title {
+          background-color: $mid;
+          color: white;
+          padding: 2rem 5rem;
+          /*         padding: 5rem; */
+          font-size: 1.5rem;
+          line-height: 1.5em;
+          height: 3em;
+          align-self: center;
+        }
+        &--content {
+          padding: 3rem 5rem;
+          /*         padding: 3em; */
+          line-height: 1.5em;
+        }
+        p:first-of-type {
+          border-right: 1px solid $mid;
+        }
+      }
+    }
+  }
+
+  .certification {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 5rem 10rem;
+    line-height: 1.5em;
+    text-align: center;
+    &__title {
+      font-size: 2rem;
+      padding: 1rem;
+      line-height: 3rem;
+      font-weight: 600;
+      color: $dark;
+    }
+    &__description {
+      padding: 1em;
+    }
+    &__choices {
+      &--title {
+        margin-top: 2em;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $dark;
+      }
+      &--subtitle {
+        padding: 2rem 10rem;
+      }
+      &__container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 2em 0;
+        &--choice {
+          max-width: 35%;
+          padding: 2em;
+          background-color: $mid;
+          color: white;
+          border-radius: 10px;
+        }
+        &--divider {
+          padding: 2rem;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $dark;
+          align-self: center;
+        }
+      }
+    }
+    &__call-to-action {
+      font-size: 1.5em;
+      padding: 1em;
+      font-weight: 500;
+      line-height: 2rem;
+      color: $dark;
+      &--button {
+        margin-top: 1em;
+        font-size: 1.5rem;
+        background-color: $mid;
+        color: white;
+        padding: 1em 2.5em;
+        margin: 1em;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-decoration: none;
+        &:hover {
+          background-color: white;
+          color: $dark;
+          border: 2px solid $mid;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-image: url("../Assets/Images/Dude_with_headset.png");
+    background-color: $dark;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding: 5rem 10rem 0 10rem;
+    line-height: 1.5rem;
+    color: white;
+    &__title {
+      font-size: 2em;
+    }
+    &__content {
+      padding: 2em 0;
+      max-width: 50%;
+    }
+    &__signage {
+      padding-bottom: 5rem;
+      &__email {
+        max-height: 10vh;
+
+        padding: 2rem 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        &::before {
+          content: url("../Assets/Icons/ic_round-email.svg");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          background-color: white;
+          width: 10%;
+        }
+        &__container {
+          &--us {
+            padding-top: 1em;
+            padding-left: 1em;
+          }
+          &--address {
+            padding-bottom: 1em;
+            padding-left: 1em;
+          }
+        }
+      }
+      &__phone {
+        max-height: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        &::before {
+          content: url("../Assets/Icons/carbon_phone-voice-filled.svg");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          background-color: white;
+          width: 10%;
+        }
+        &__container {
+          &--us {
+            padding-top: 1em;
+            padding-left: 1em;
+          }
+          &--number {
+            padding-bottom: 1em;
+            padding-left: 1em;
+          }
+        }
       }
     }
   }
